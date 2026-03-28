@@ -1,0 +1,13 @@
+{
+  "name": "noise-ui",
+  "productName": "ClearMic",
+  "version": "1.0.0",
+  "description": "AI-powered noise cancellation for your mic",
+  "main": "src/index.js",
+  "private": true,
+  "author": "josephaguilar",
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}

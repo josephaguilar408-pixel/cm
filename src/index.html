@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearMic</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div id="screen-login" class="screen active">
+    <div class="card">
+      <div class="logo">🎤</div>
+      <h1>ClearMic</h1>
+      <p class="tagline">AI-powered noise cancellation for your mic</p>
+      <form id="login-form">
+        <label>Email
+          <input id="login-email" type="email" placeholder="you@example.com" required />
+        </label>
+        <label>Password
+          <input id="login-password" type="password" placeholder="••••••••" required />
+        </label>
+        <p id="login-error" class="error-text"></p>
+        <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+        <button type="button" id="goto-signup" class="btn btn-ghost btn-full">Create account</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SIGN-UP SCREEN -->
+  <div id="screen-signup" class="screen">
+    <div class="card">
+      <div class="logo">🎤</div>
+      <h1>Create Account</h1>
+      <p class="tagline">Get started with ClearMic</p>
+      <form id="signup-form">
+        <label>Name
+          <input id="signup-name" type="text" placeholder="Your name" required />
+        </label>
+        <label>Email
+          <input id="signup-email" type="email" placeholder="you@example.com" required />
+        </label>
+        <label>Password
+          <input id="signup-password" type="password" placeholder="Min 8 characters" required minlength="8" />
+        </label>
+        <p id="signup-error" class="error-text"></p>
+        <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+        <button type="button" id="goto-login" class="btn btn-ghost btn-full">Back to sign in</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- PAYWALL SCREEN -->
+  <div id="screen-paywall" class="screen">
+    <div class="card">
+      <div class="logo">⭐</div>
+      <h1>Unlock ClearMic</h1>
+      <p class="tagline">One-time purchase. Use forever.</p>
+      <div class="pricing-box">
+        <span class="price">$9<span class="price-sub">.99</span></span>
+        <span class="price-label">one-time</span>
+      </div>
+      <ul class="feature-list">
+        <li>✓ Real-time AI noise cancellation</li>
+        <li>✓ Routes to any virtual mic (BlackHole, etc.)</li>
+        <li>✓ DeepFilterNet3 — studio quality</li>
+        <li>✓ Lifetime updates</li>
+      </ul>
+      <button id="checkout-btn" class="btn btn-primary btn-full">Buy Now — $9.99</button>
+      <button id="restore-btn" class="btn btn-ghost btn-full">I already paid</button>
+      <button id="paywall-logout" class="btn btn-link btn-full">Sign out</button>
+    </div>
+  </div>
+
+  <!-- MAIN APP SCREEN -->
+  <div id="screen-app" class="screen">
+    <div class="card app-card">
+      <div class="app-header">
+        <span class="logo-small">🎤</span>
+        <span class="app-title">ClearMic</span>
+        <button id="app-logout" class="btn btn-link">Sign out</button>
+      </div>
+      <div class="status-pill" id="status-pill">
+        <span class="dot" id="status-dot"></span>
+        <span id="status-text">OFF</span>
+      </div>
+      <button id="toggleBtn" class="btn btn-toggle off">Start Noise Cancellation</button>
+      <p id="status" class="status-message">Ready</p>
+      <dl class="device-grid">
+        <div><dt>Input</dt><dd>MacBook Pro Mic</dd></div>
+        <div><dt>Output</dt><dd>BlackHole 2ch</dd></div>
+        <div><dt>Model</dt><dd>DeepFilterNet3</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
