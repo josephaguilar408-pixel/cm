@@ -70,3 +70,4 @@ git push
 
 - Release checklist: see `RELEASE_CHECKLIST.md`
 - Changelog: see `CHANGELOG.md`
+- Testing guide: see `TESTING.md`
