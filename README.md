@@ -49,11 +49,16 @@ git push
 
 ## Create a GitHub Release (Distribute the App)
 
-1. Build the app package locally.
+1. Create the macOS release zip artifact:
+
+```bash
+./scripts/create-release-zip.sh 1.0.1 /Users/josephaguilar/Applications/ClearMic.app
+```
+
 2. Open the repository Releases page.
 3. Click Draft a new release.
 4. Create a tag (for example v1.0.1).
-5. Upload the built app artifact (for example zip or dmg from out/).
+5. Upload the generated zip artifact (for example `ClearMic-v1.0.1-macOS.app.zip`).
 6. Publish release.
 
 ## Notes

@@ -22,6 +22,7 @@ Use this checklist when preparing a new ClearMic release.
 - [ ] Build distributables (`npm run make`).
 - [ ] Confirm output artifacts under `out/`.
 - [ ] Smoke-test generated app bundle on macOS.
+- [ ] If Forge build is unavailable, create zip from app bundle (`./scripts/create-release-zip.sh X.Y.Z /Users/josephaguilar/Applications/ClearMic.app`).
 
 ## GitHub Release
 
