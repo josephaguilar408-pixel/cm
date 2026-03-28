@@ -60,3 +60,8 @@ git push
 
 - Keep large build artifacts out of Git history; upload them as Release assets instead.
 - node_modules and local environment files are ignored by .gitignore.
+
+## Documentation
+
+- Release checklist: see `RELEASE_CHECKLIST.md`
+- Changelog: see `CHANGELOG.md`
